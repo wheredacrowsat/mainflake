@@ -79,7 +79,11 @@
   "$mod" = "SUPER";
   ## monitors
   
-  "monitor" = "DP-3, 1920x1080@144, 0x0, 1"  
+  monitor = [
+  "DP-3, 1920x1080@143.98, 1920x0, auto"
+  "HDMI-A-1, 1920x1080@143.98, 0x0, auto"
+  ];
+
     bind = [
 
       "$mod, Return, exec, alacritty"      
