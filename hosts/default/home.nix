@@ -77,11 +77,12 @@
   settings = {
 
   "$mod" = "SUPER";
-
+  
     bind = [
 
       "$mod, Return, exec, alacritty"      
-      
+      "$mod, d, exec, rofi -show drun"
+    
       ];
 
     };
