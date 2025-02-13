@@ -77,7 +77,9 @@
   settings = {
 
   "$mod" = "SUPER";
+  ## monitors
   
+  "monitor" = "DP-3, 1920x1080@144, 0x0, 1"  
     bind = [
 
       "$mod, Return, exec, alacritty"      
