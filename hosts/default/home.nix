@@ -74,21 +74,21 @@
   wayland.windowManager.hyprland = {
   enable = true;
 
-  settings = {
+    settings = {
 
-  "$mod" = "SUPER";
-  ## monitors
+    "$mod" = "SUPER";
+
+    ## monitors
   
-  monitor = [
-  "DP-3, 1920x1080@143.98, 1920x0, auto"
-  "HDMI-A-1, 1920x1080@143.98, 0x0, auto"
-  ];
+    monitor = [
+    "DP-3, 1920x1080@143.98, 1920x0, auto"
+    "HDMI-A-1, 1920x1080@143.98, 0x0, auto"
+    ];
 
     bind = [
-
       "$mod, Return, exec, alacritty"      
       "$mod, d, exec, rofi -show drun"
-    
+      "SUPER_SHIFT, Q, closewindow" 
       ];
 
     };
