@@ -108,6 +108,7 @@
     discord
     fastfetch
     btop
+    hyprcursor
         
   ];
 

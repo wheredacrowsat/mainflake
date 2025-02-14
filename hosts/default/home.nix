@@ -88,7 +88,16 @@
 
   };
 
- 
+  home = {
+      pointerCursor = {
+          package = pkgs.simp1e-cursors;
+          name = "Simp1e-Gruvbox-Dark";
+          size = 28;
+          gtk.enable = true;
+          x11.enable = true;
+	  hyprcursor.enable = true;
+      };
+  }; 
   wayland.windowManager.hyprland = {
   enable = true;
 
@@ -123,6 +132,11 @@
     
     bindm = [
       "$mod, mouse:272, movewindow"
+    ];
+
+    bindel = [
+      " , XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+      " , XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
     ];
 
     };
