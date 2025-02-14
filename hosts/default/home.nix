@@ -70,14 +70,34 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
-  
+ 
+  gtk = {
+      enable = true;
+
+      theme = {
+          name = "Gruvbox-Dark";
+          package = pkgs.gruvbox-gtk-theme;
+      };
+      
+      iconTheme = {
+
+        name = "Gruvbox-Dark-Icons";
+	package = pkgs.gruvbox-dark-icons-gtk;
+
+    };
+
+  };
+
+ 
   wayland.windowManager.hyprland = {
   enable = true;
 
     settings = {
 
     "$mod" = "SUPER";
-    
+   
+    "exec-once" = "swww-daemon & swww img $HOME/nixos/wallpaper.png";
+ 
     input  = {
 
     accel_profile = "flat";
@@ -97,7 +117,8 @@
       "$mod, k, movefocus, u"
       "$mod, l, movefocus, d"
       "$mod, semicolon, movefocus, r"
-      "$mod, f, togglefloating"       
+      "$mod, f, togglefloating"
+      "$mod, m, exit"       
       ];
     
     bindm = [
@@ -105,6 +126,7 @@
     ];
 
     };
+
   };
 
   # Let Home Manager install and manage itself.

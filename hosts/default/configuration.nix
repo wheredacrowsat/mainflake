@@ -94,6 +94,7 @@
     git
     wget
     curl
+    nwg-look
     emacs
     rivalcfg
     firefox
