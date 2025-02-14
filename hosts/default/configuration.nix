@@ -11,6 +11,8 @@
       inputs.home-manager.nixosModules.default
     ];
 
+  hardware.graphics.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -69,6 +71,9 @@
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   
+  #enable steam
+  programs.steam.enable = true;
+
   # need a desktop portal
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
@@ -83,6 +88,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
 
+    microcode-amd
+    amdvlk
     gh  
     git
     wget
@@ -96,7 +103,6 @@
     swww
     alacritty
     rofi-wayland
-    steam
     discord
     fastfetch
     btop

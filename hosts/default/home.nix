@@ -88,8 +88,17 @@
     bind = [
       "$mod, Return, exec, alacritty"      
       "$mod, d, exec, rofi -show drun"
-      "SUPER_SHIFT, Q, closewindow" 
+      "SUPER_SHIFT, Q, killactive"
+      "$mod, j, movefocus, l"
+      "$mod, k, movefocus, u"
+      "$mod, l, movefocus, d"
+      "$mod, semicolon, movefocus, r"
+      "$mod, f, togglefloating"       
       ];
+    
+    bindm = [
+      "$mod, mouse:272, movewindow"
+    ];
 
     };
   };
