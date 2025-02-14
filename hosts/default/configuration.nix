@@ -95,6 +95,7 @@
     wget
     curl
     emacs
+    rivalcfg
     firefox
     home-manager
     eww

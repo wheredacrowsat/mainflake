@@ -77,8 +77,12 @@
     settings = {
 
     "$mod" = "SUPER";
+    
+    input  = {
 
-    ## monitors
+    accel_profile = "flat";
+
+    };
   
     monitor = [
     "DP-3, 1920x1080@143.98, 1920x0, auto"
