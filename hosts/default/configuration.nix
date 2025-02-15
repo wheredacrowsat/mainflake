@@ -11,7 +11,13 @@
       inputs.home-manager.nixosModules.default
     ];
 
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+
+    enable = true;
+    enable32Bit = true;
+    
+    extraPackages = with pkgs; [ amdvlk ];
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -90,7 +96,6 @@
   environment.systemPackages = with pkgs; [
 
     microcode-amd
-    amdvlk
     gh  
     git
     wget
