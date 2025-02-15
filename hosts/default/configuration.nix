@@ -93,9 +93,9 @@
     gh  
     git
     wget
+    vim
     curl
     nwg-look
-    emacs
     rivalcfg
     firefox
     home-manager
@@ -109,6 +109,7 @@
     fastfetch
     btop
     hyprcursor
+    pcmanfm
         
   ];
 
