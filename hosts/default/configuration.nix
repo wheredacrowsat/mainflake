@@ -73,6 +73,7 @@
   
   #enable steam
   programs.steam.enable = true;
+  programs.steam.extraCompatPackages = [ pkgs.proton-ge-bin ];
 
   # need a desktop portal
   xdg.portal.enable = true;
@@ -110,7 +111,9 @@
     btop
     hyprcursor
     pcmanfm
-        
+    ringracers
+    grimblast
+    pavucontrol        
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
