@@ -15,7 +15,7 @@
     nixre = "sudo nixos-rebuild switch --flake ~/nixos#default";
     nixte = "sudo nixos-rebuild test --flake ~/nixos#default";
     nixtup = "sudo nixos-rebuild test --flake ~/nixos#default --upgrade";
-    nixupg = "sudo nixos-rebuild switch --flake ~/nixos#default -- upgrade";
+    nixupg = "sudo nixos-rebuild switch --flake ~/nixos#default --upgrade";
     la = "ls -a";
     
      };
