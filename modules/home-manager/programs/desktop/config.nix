@@ -8,7 +8,7 @@
       "$mod" = "SUPER";
       exec-once = [
       "swww-daemon &" 
-      "swww img /etc/nixos/modules/home-manager/programs/desktop/wallpaper.png"
+      "swww img ~/nixos/modules/home-manager/programs/desktop/wallpaper.png"
     ];
 
     input  = {
