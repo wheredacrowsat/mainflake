@@ -11,11 +11,11 @@
     };
     shellAliases = {
 
-    nixcfg = "sudo vim /etc/nixos";
-    nixre = "sudo nixos-rebuild switch --flake /etc/nixos#default";
-    nixte = "sudo nixos-rebuild test --flake /etc/nixos#default";
-    nixtup = "sudo nixos-rebuild test --flake /etc/nixos#default --upgrade";
-    nixupg = "sudo nixos-rebuild switch --flake /etc/nixos#default -- upgrade";
+    nixcfg = "sudo vim ~/nixos";
+    nixre = "sudo nixos-rebuild switch --flake ~/nixos#default";
+    nixte = "sudo nixos-rebuild test --flake ~/nixos#default";
+    nixtup = "sudo nixos-rebuild test --flake ~/nixos#default --upgrade";
+    nixupg = "sudo nixos-rebuild switch --flake ~/nixos#default -- upgrade";
     la = "ls -a";
     
      };
