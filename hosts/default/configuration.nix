@@ -19,6 +19,11 @@
     extraPackages = with pkgs; [ amdvlk ];
   };
 
+  ## i want zsh
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -118,7 +123,8 @@
     pcmanfm
     ringracers
     grimblast
-    pavucontrol        
+    pavucontrol
+        
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
